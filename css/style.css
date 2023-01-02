@@ -1,0 +1,224 @@
+.animation, .rombo, #tecnologias .row .col-lg-3 .card, #proyectos .proyecto figure .proyecto-link .link span:hover, #proyectos .proyecto figure .proyecto-link, header ul li a::after, header ul li a::before, header ul li a {
+  transition: 0.3s all ease-in-out;
+}
+
+:root {
+  --text-nav-primary: #2CD5D5;
+  --text-secondary: #7BEDED;
+  --text-paleta2-a: #1E3549;
+  --text-paleta2-b: #2CB2BE;
+}
+
+body {
+  background: #1E1E31;
+}
+
+.container-fluid {
+  background: #000000; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 0;
+}
+
+header {
+  padding: 0 20px;
+  max-height: 80px;
+  margin-bottom: 100px;
+  font-family: "Roboto Mono", monospace;
+}
+header .logo img {
+  width: 60px;
+  height: 40px;
+}
+header ul {
+  margin: auto;
+  padding: 0;
+}
+header ul li {
+  list-style: none;
+  display: inline-block;
+}
+header ul li a {
+  text-decoration: none;
+  margin: 0 20px 0 0;
+  padding: 2px 5px;
+  position: relative;
+  color: white;
+  font-weight: 600;
+  font-size: x-large;
+}
+header ul li a::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0%;
+  left: 0;
+  background-color: var(--text-nav-primary);
+}
+header ul li a::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0%;
+  right: 0;
+  bottom: -6px;
+  background-color: var(--text-nav-primary);
+  transform: rotateZ(-180deg);
+}
+header ul li a:hover {
+  color: var(--text-nav-primary);
+}
+header ul li a:hover:before {
+  width: 100%;
+}
+header ul li a:hover:after {
+  width: 100%;
+}
+
+section {
+  font-family: "Roboto Mono", monospace;
+}
+section .profile {
+  background-color: rgb(24, 23, 23);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 30px;
+  -webkit-animation: palpitar 5s infinite;
+          animation: palpitar 5s infinite;
+}
+section .profile img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+section .arrow {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  margin-top: 60px;
+  -webkit-animation: palpitar 1s infinite;
+          animation: palpitar 1s infinite;
+}
+section .arrow span {
+  font-size: 50px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#proyectos {
+  font-family: "Roboto Mono", monospace;
+  margin-top: 100x;
+}
+#proyectos .proyecto {
+  background-color: transparent;
+  padding: 20px 20px;
+  width: 100%;
+  color: white;
+}
+#proyectos .proyecto .titulo {
+  font-weight: 800;
+}
+#proyectos .proyecto figure {
+  position: relative;
+  height: 300px;
+  margin: 0;
+  margin-top: 30px;
+}
+#proyectos .proyecto figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#proyectos .proyecto figure:hover > .proyecto-link {
+  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+}
+#proyectos .proyecto figure .proyecto-link {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: -20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#proyectos .proyecto figure .proyecto-link .link span {
+  border: 1px solid white;
+  padding: 10px 15px;
+}
+#proyectos .proyecto figure .proyecto-link .link span a {
+  color: white;
+  text-decoration: none;
+}
+#proyectos .proyecto figure .proyecto-link .link span:last-child {
+  margin-left: 30px;
+}
+#proyectos .proyecto figure .proyecto-link .link span:hover {
+  background-color: rgba(44, 178, 190, 0.3);
+}
+
+#tecnologias {
+  margin-top: 50px;
+}
+#tecnologias .row .col-lg-3 .card .card-body img {
+  width: 40%;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#tecnologias .row .col-lg-3 .card:hover {
+  transform: rotate(5deg);
+}
+
+#contacto {
+  display: block;
+  background-color: white;
+  font-family: "Roboto Mono", monospace;
+}
+#contacto .row .col-lg-6 section .contact-item img {
+  width: 50px;
+  margin-right: 10px;
+}
+#contacto .row .col-lg-6 section .contact-item a {
+  color: black;
+  font-weight: 600;
+}
+
+@-webkit-keyframes palpitar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes palpitar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.text-palete-2 {
+  color: var(--text-paleta2-b);
+}
+
+.rombo {
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}/*# sourceMappingURL=style.css.map */

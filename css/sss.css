@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+    background: url("../img/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    max-height: 80px;
+}
+header .logo img{
+    width: 60px;
+    height: 40px;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+}
+header ul li a{
+    text-decoration: none;
+    margin: 0 20px 0 0;
+    padding: 2px 5px;
+    position: relative;
+    color: white;
+    font-weight: 600;
+    transition: 0.2s all ease-in;
+}
+header ul li:last-child{
+    margin-right: -10px;
+}
+
+header ul li a::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background-color: red;
+}
+header ul li a::before:hover::before{
+    width: 100%;
+    background-color: red;
+    height: 3px;
+}
