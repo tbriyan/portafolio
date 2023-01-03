@@ -5,24 +5,28 @@
 :root {
   --text-nav-primary: #2CD5D5;
   --text-secondary: #7BEDED;
-  --text-paleta2-a: #1E3549;
+  --text-paleta2-a: #1E1E31;
   --text-paleta2-b: #2CB2BE;
 }
 
 body {
-  background: #1E1E31;
+  margin: 0;
+  padding: 0;
 }
 
 .container-fluid {
-  background: #000000; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  --opacidad-negro: 0.6;
+  background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/img-1.jpg");
+  background-attachment: fixed;
+  background-repeat: none;
+  background-size: cover;
   padding: 0;
 }
 
 header {
   padding: 0 20px;
   max-height: 80px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   font-family: "Roboto Mono", monospace;
 }
 header .logo img {
@@ -39,7 +43,7 @@ header ul li {
 }
 header ul li a {
   text-decoration: none;
-  margin: 0 20px 0 0;
+  margin: 0 50px 0 0;
   padding: 2px 5px;
   position: relative;
   color: white;
@@ -78,9 +82,9 @@ section {
   font-family: "Roboto Mono", monospace;
 }
 section .profile {
-  background-color: rgb(24, 23, 23);
-  width: 150px;
-  height: 150px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   margin: auto;
   margin-top: 30px;
@@ -94,26 +98,15 @@ section .profile img {
      object-fit: cover;
   border-radius: 50%;
 }
-section .arrow {
-  width: 80px;
-  height: 80px;
-  margin: auto;
-  margin-top: 60px;
-  -webkit-animation: palpitar 1s infinite;
-          animation: palpitar 1s infinite;
-}
-section .arrow span {
-  font-size: 50px;
-  max-width: 100%;
-  max-height: 100%;
+section .clip {
+  margin-top: 100px;
 }
 
 #proyectos {
   font-family: "Roboto Mono", monospace;
-  margin-top: 100x;
+  background-color: var(--text-paleta2-a);
 }
 #proyectos .proyecto {
-  background-color: transparent;
   padding: 20px 20px;
   width: 100%;
   color: white;
@@ -132,6 +125,7 @@ section .arrow span {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
 }
 #proyectos .proyecto figure:hover > .proyecto-link {
   visibility: visible;
@@ -148,6 +142,7 @@ section .arrow span {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 #proyectos .proyecto figure .proyecto-link .link span {
   border: 1px solid white;
@@ -165,7 +160,7 @@ section .arrow span {
 }
 
 #tecnologias {
-  margin-top: 50px;
+  background-color: var(--text-paleta2-a);
 }
 #tecnologias .row .col-lg-3 .card .card-body img {
   width: 40%;
@@ -177,18 +172,37 @@ section .arrow span {
   transform: rotate(5deg);
 }
 
-#contacto {
-  display: block;
-  background-color: white;
+#footer {
+  --opacidad-negro: 0.6;
+  background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/img-1.jpg");
+  background-attachment: fixed;
+  background-repeat: none;
+  background-size: cover;
+}
+#footer #contacto {
+  padding: 0px 0px 100px 0px;
+  background-color: transparent;
   font-family: "Roboto Mono", monospace;
+  color: white;
 }
-#contacto .row .col-lg-6 section .contact-item img {
+#footer #contacto .contact-items {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+#footer #contacto .contact-items .item {
+  text-align: center;
+  margin: 0 10px;
+}
+#footer #contacto .contact-items .item img {
   width: 50px;
-  margin-right: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-#contacto .row .col-lg-6 section .contact-item a {
+#footer #contacto .contact-items .item a {
   color: black;
-  font-weight: 600;
 }
 
 @-webkit-keyframes palpitar {
