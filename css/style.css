@@ -1,4 +1,4 @@
-.animation, .rombo, #tecnologias .row .col-lg-3 .card, #proyectos .proyecto figure .proyecto-link .link span:hover, #proyectos .proyecto figure .proyecto-link, header ul li a::after, header ul li a::before, header ul li a {
+.animation, .btn-cv, .rombo, #tecnologias .row .col-lg-3 .card, #proyectos .proyecto figure .proyecto-link .link span:hover, #proyectos .proyecto figure .proyecto-link, header ul li a::after, header ul li a::before, header ul li a {
   transition: 0.3s all ease-in-out;
 }
 
@@ -83,11 +83,11 @@ section {
 }
 section .profile {
   background-color: rgba(0, 0, 0, 0.1);
-  width: 250px;
-  height: 250px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 10px;
   -webkit-animation: palpitar 5s infinite;
           animation: palpitar 5s infinite;
 }
@@ -229,10 +229,26 @@ section .clip {
   }
 }
 .text-palete-2 {
-  color: var(--text-paleta2-b);
+  color: var(--text-nav-primary);
 }
 
 .rombo {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
           clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.btn-cv {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px 25px;
+}
+.btn-cv:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=style.css.map */

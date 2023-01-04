@@ -7,20 +7,18 @@
     <title>Iulius</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container-fluid">
+    <div id="home" class="container-fluid">
         <header>
-            <!--<div class="logo bg-primary">
-                <img src="img/fondo.jpg" alt="">
-            </div>-->
             <nav class="navbar">
                 <ul class="mt-5">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Tecnologias</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#proyectos">PROYECTOS</a></li>
+                    <li><a href="#tecnologias">TECNOLOGÍAS</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
                 </ul>
             </nav>
         </header>
@@ -37,6 +35,14 @@
                 <br>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
             </p>
+            <div class="pt-5">
+            <a href="#" class="btn-cv">
+                Curriculum
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+              </svg></a>
+            </div>
             <div class="clip">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1E1E31" fill-opacity="1" d="M0,64L0,64L68.6,64L68.6,0L137.1,0L137.1,192L205.7,192L205.7,256L274.3,256L274.3,192L342.9,192L342.9,256L411.4,256L411.4,96L480,96L480,128L548.6,128L548.6,160L617.1,160L617.1,32L685.7,32L685.7,64L754.3,64L754.3,256L822.9,256L822.9,256L891.4,256L891.4,160L960,160L960,128L1028.6,128L1028.6,96L1097.1,96L1097.1,256L1165.7,256L1165.7,192L1234.3,192L1234.3,224L1302.9,224L1302.9,160L1371.4,160L1371.4,160L1440,160L1440,320L1371.4,320L1371.4,320L1302.9,320L1302.9,320L1234.3,320L1234.3,320L1165.7,320L1165.7,320L1097.1,320L1097.1,320L1028.6,320L1028.6,320L960,320L960,320L891.4,320L891.4,320L822.9,320L822.9,320L754.3,320L754.3,320L685.7,320L685.7,320L617.1,320L617.1,320L548.6,320L548.6,320L480,320L480,320L411.4,320L411.4,320L342.9,320L342.9,320L274.3,320L274.3,320L205.7,320L205.7,320L137.1,320L137.1,320L68.6,320L68.6,320L0,320L0,320Z"></path></svg>
             </div>
@@ -50,7 +56,32 @@
             </p>
             <div class="row mt-5">
                 <div class="col-lg-6 mb-4">
-                    <section class="proyecto">
+                    <section class="proyecto" data-aos="fade-up" data-aos-duration="2000">
+                        <h5 class="titulo text-center">Aplicacion de citas</h5>
+                        <figure >
+                            <img src="img/fondo2.jpg" alt="sadf">
+                            <div class="proyecto-link">
+                                <div class="link">
+                                    <span><a href="#">
+                                        Ver Código
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                          </svg>
+                                    </a></span>
+                                    <span><a href="#">
+                                        Ver Demo
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                          </svg>
+                                    </a></span>
+                                </div>
+                            </div>
+                        </figure>
+                    </section>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <section class="proyecto"  data-aos="fade-up" data-aos-duration="2000">
                         <h5 class="titulo text-center">Aplicacion de citas</h5>
                         <figure>
                             <img src="img/fondo2.jpg" alt="sadf">
@@ -75,9 +106,9 @@
                     </section>
                 </div>
                 <div class="col-lg-6 mb-4">
-                    <section class="proyecto">
+                    <section class="proyecto" data-aos="fade-up" data-aos-duration="2000">
                         <h5 class="titulo text-center">Aplicacion de citas</h5>
-                        <figure>
+                        <figure >
                             <img src="img/fondo2.jpg" alt="sadf">
                             <div class="proyecto-link">
                                 <div class="link">
@@ -100,34 +131,9 @@
                     </section>
                 </div>
                 <div class="col-lg-6 mb-4">
-                    <section class="proyecto">
+                    <section class="proyecto" data-aos="fade-up" data-aos-duration="2000">
                         <h5 class="titulo text-center">Aplicacion de citas</h5>
-                        <figure>
-                            <img src="img/fondo2.jpg" alt="sadf">
-                            <div class="proyecto-link">
-                                <div class="link">
-                                    <span><a href="#">
-                                        Ver Código
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                                          </svg>
-                                    </a></span>
-                                    <span><a href="#">
-                                        Ver Demo
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-                                          </svg>
-                                    </a></span>
-                                </div>
-                            </div>
-                        </figure>
-                    </section>
-                </div>
-                <div class="col-lg-6 mb-4">
-                    <section class="proyecto">
-                        <h5 class="titulo text-center">Aplicacion de citas</h5>
-                        <figure>
+                        <figure >
                             <img src="img/fondo2.jpg" alt="sadf">
                             <div class="proyecto-link">
                                 <div class="link">
@@ -155,12 +161,12 @@
     <div id="tecnologias">
         <div class="container">
             <h1 class="text-light display-1"><strong>TECNOLOGÍAS</strong></h1>
-            <p class="text-light mt-5">
+            <p class="text-light mt-5 mb-5">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates ullam recusandae officiis ea minima dolorum, deleniti rerum ipsam dignissimos, reiciendis velit aperiam repudiandae veritatis voluptas, natus excepturi nisi distinctio facere.
             </p>
             <div class="row">
                 <div class="col-lg-3 mb-4">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-duration="2000">
                         <div class="card-body text-center">
                             <img src="img/icon (9).png" alt="">
                         </div>
@@ -168,7 +174,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 mb-4">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-duration="2000">
                         <div class="card-body text-center">
                             <img src="img/icon (8).png" alt="">
                         </div>
@@ -176,7 +182,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 mb-4">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-duration="2000">
                         <div class="card-body text-center">
                             <img src="img/icon (3).png" alt="">
                         </div>
@@ -184,7 +190,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 mb-4">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-duration="2000">
                         <div class="card-body text-center">
                             <img src="img/icon (4).png" alt="">
                         </div>
@@ -192,7 +198,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 mb-4">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-duration="2000">
                         <div class="card-body text-center">
                             <img src="img/icon (5).png" alt="">
                         </div>
@@ -200,7 +206,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 mb-4">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-duration="2000">
                         <div class="card-body text-center">
                             <img src="img/icon (6).png" alt="">
                         </div>
@@ -208,15 +214,15 @@
                     </div>
                 </div>
                 <div class="col-lg-3 mb-4">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-duration="2000">
                         <div class="card-body text-center">
                             <img src="img/icon (7).png" alt="">
                         </div>
                         <div class="text-center"><strong>POSTGRES</strong></div>
                     </div>
                 </div>
-                <div class="col-lg-3 mb-4">
-                    <div class="card">
+                <div class="col-lg-3 mb-4"> 
+                    <div class="card" data-aos="flip-up" data-aos-duration="2000">
                         <div class="card-body text-center">
                             <img src="img/icon (2).png" alt="">
                         </div>
@@ -225,7 +231,7 @@
                 </div>
                 <div class="col-lg-3"></div>
                 <div class="col-lg-3 mb-4">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-duration="2000">
                         <div class="card-body text-center">
                             <img src="img/icon (1).png" alt="">
                         </div>
@@ -233,7 +239,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 mb-4">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-duration="2000">
                         <div class="card-body text-center">
                             <img src="img/icon (10).png" alt="">
                         </div>
@@ -251,7 +257,7 @@
             <div class="container">
             <h1 class="text-center display-1 mb-5"><strong>CONTACTO</strong></h1>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="zoom-in">
                     <h5 class="text-center mb-4"><strong>Redes Sociales</strong></h5>
                     <div class="contact-items mb-4">
                         <div class="item">
@@ -285,7 +291,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-lg-6 ps-5 pe-5">
+                <div class="col-lg-6 ps-5 pe-5" data-aos="zoom-in">
                     <h5 class="text-center mb-4"><strong>Hablame o mandame un saludo</strong></h5>
                     <form>
                         <div class="mb-3">
@@ -313,13 +319,12 @@
         
     
     <script src="js/jquery.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script>
-        var dh_width = $(".grid-item").width();
-        $(".grid-item").css({
-            height : dh_width
-        });
+        //Inicializar aos
+        AOS.init();
     </script>
 </body>
 </html>
